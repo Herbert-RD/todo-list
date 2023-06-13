@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Temporizador estilo pomodoro com diversas funcionalidades como pausar, mudar tempo, tocar musica e etc...">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>FocusTimer - Pomodoro</title>
+
+  <script src="./js/index.js" defer type="module"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="time-wrapper">
+      <span class="time" id="minutes">25</span>
+      <span class="time">:</span>
+      <span class="time" id="seconds">00</span>
+    </div>
+    <div class="control">
+        <button id="play" class=""><img src="assets/play-circle.svg" alt="icone de play"></button>
+        <button id="pause" class="hide"><img src="assets/pause-circle.svg" alt="icone de play"></button>
+        <button id="stop" class="hide"><img src="assets/stop-circle.svg" alt="icone de play"></button>
+        <button id="set" ><img src="assets/stopwatch.svg" alt="icone de cronometro"></button>
+    </div>
+  </main>
+
+  <div class="sound-wrapper">
+    <button class="sound-on"><img src="assets/volume-medium.svg" alt="icone de caixa de som"></button>
+    <button class="sound-off hide"><img src="assets/volume-mute.svg" alt=""></button>
+  </div>
+
+</body>
+</html>
